@@ -95,7 +95,7 @@ layers:
   - '&'
   - '*'
   - (
-  - {t: ), h: toggle}
+  - )
   - '='
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -184,8 +184,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - OUT USB
+  - {t: Game, h: toggle}
   - OUT BLE
   - MUTE
   - PP

@@ -91,7 +91,7 @@
         Symbols {
             label = "Navigation";
             bindings = <
-&trans  &kp EXCL  &kp AT  &kp HASH  &kp DOLLAR  &kp PERCENT    &kp CARET          &kp AMPERSAND   &kp ASTERISK     &kp LEFT_PARENTHESIS  &kt RIGHT_PARENTHESIS  &kp EQUAL
+&trans  &kp EXCL  &kp AT  &kp HASH  &kp DOLLAR  &kp PERCENT    &kp CARET          &kp AMPERSAND   &kp ASTERISK     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL
 &trans  &trans    &trans  &trans    &trans      &trans         &kp LA(BACKSLASH)  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp MINUS
 &trans  &trans    &trans  &trans    &trans      &trans         &none              &kp LA(LEFT)    &none            &kp LA(RIGHT)         &kt PAGE_DOWN          &kp GRAVE
                           &trans    &kp SPACE   &trans         &trans             &trans
@@ -111,10 +111,10 @@
         system {
             label = "SYSTEM";
             bindings = <
-&trans      &kp F1          &kp F2  &kp F3        &kp F4        &kp F5          &kp F6        &kp F7        &kp F8      &kp F9      &kp F10  &trans
-&trans      &trans          &trans  &trans        &out OUT_USB  &out OUT_BLE    &kp C_MUTE    &kp C_PP      &trans      &trans      &trans   &trans
-&bt BT_CLR  &bt BT_CLR_ALL  &trans  &out OUT_TOG  &bt BT_PRV    &bt BT_NXT      &kp C_VOL_DN  &kp C_VOL_UP  &kp C_PREV  &kp C_NEXT  &trans   &studio_unlock
-                                    &trans        &trans        &trans          &trans        &trans
+&trans      &kp F1          &kp F2  &kp F3        &kp F4      &kp F5          &kp F6        &kp F7        &kp F8      &kp F9      &kp F10  &trans
+&trans      &trans          &trans  &out OUT_USB  &to 1       &out OUT_BLE    &kp C_MUTE    &kp C_PP      &trans      &trans      &trans   &trans
+&bt BT_CLR  &bt BT_CLR_ALL  &trans  &out OUT_TOG  &bt BT_PRV  &bt BT_NXT      &kp C_VOL_DN  &kp C_VOL_UP  &kp C_PREV  &kp C_NEXT  &trans   &studio_unlock
+                                    &trans        &trans      &trans          &trans        &trans
             >;
         };
 

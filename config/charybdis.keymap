@@ -58,8 +58,8 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <175>;
-            quick-tap-ms = <150>;
+            tapping-term-ms = <150>;
+            quick-tap-ms = <125>;
             require-prior-idle-ms = <185>;
             flavor = "tap-preferred";
         };
@@ -115,10 +115,10 @@
         BASE {
             label = "Base";
             bindings = <
-&lt SYS ESC   &kp Q                  &kp W  &kp E             &kp R      &kp T    &kp Y  &kp U    &kp I      &kp O       &kp P                            &kp BACKSPACE
-&kp TAB       &ht_left LEFT_SHIFT A  &kp S  &kp D             &kp F      &kp G    &kp H  &kp J    &kp K      &kp L       &ht_right RIGHT_SHIFT SEMICOLON  &kp SINGLE_QUOTE
-&kp LEFT_GUI  &kp Z                  &kp X  &kp C             &kp V      &kp B    &kp N  &kp M    &kp COMMA  &kp PERIOD  &kp SLASH                        &kp RIGHT_CONTROL
-                                            &kp LEFT_CONTROL  &kp SPACE  &mo 2    &mo 3  &kp RET
+&lt SYS ESC   &kp Q             &kp W  &kp E             &kp R      &kp T        &kp Y  &kp U  &kp I      &kp O       &kp P                      &kp BACKSPACE
+&kp TAB       &hm LEFT_SHIFT A  &kp S  &kp D             &kp F      &kp G        &kp H  &kp J  &kp K      &kp L       &hm RIGHT_SHIFT SEMICOLON  &kp SINGLE_QUOTE
+&kp LEFT_GUI  &kp Z             &kp X  &kp C             &kp V      &kp B        &kp N  &kp M  &kp COMMA  &kp PERIOD  &kp SLASH                  &kp RIGHT_CONTROL
+                                       &kp LEFT_CONTROL  &kp SPACE  &kp ENTER    &mo 2  &mo 3
             >;
         };
 

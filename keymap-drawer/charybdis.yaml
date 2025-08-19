@@ -39,9 +39,9 @@ layers:
   - RIGHT CONTROL
   - LEFT CONTROL
   - SPACE
+  - ENTER
   - Symbols
   - Digits
-  - RET
   Game:
   - {t: ESC, h: Base}
   - Q
@@ -123,8 +123,8 @@ layers:
   - '`'
   - {t: ▽, type: trans}
   - SPACE
-  - {type: held}
   - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   Digits:
   - SYSTEM
@@ -166,8 +166,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
-  - '0'
+  - {t: ▽, type: trans}
+  - {t: '0', type: held}
   SYSTEM:
   - {type: held}
   - F1

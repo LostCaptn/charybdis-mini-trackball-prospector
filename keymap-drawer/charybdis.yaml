@@ -247,9 +247,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - Scroll
-  - L CLK
   - {t: ▽, type: trans}
-  - R CLK
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   Scroll:
@@ -336,3 +336,10 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+combos:
+- p: [34, 38]
+  k: R CLK
+  l: [Mouse]
+- p: [34, 36]
+  k: L CLK
+  l: [Mouse]

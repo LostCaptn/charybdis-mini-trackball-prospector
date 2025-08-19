@@ -337,9 +337,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
 combos:
-- p: [34, 38]
+- p: [28, 27]
   k: R CLK
   l: [Mouse]
-- p: [34, 36]
+- p: [26, 25]
   k: L CLK
   l: [Mouse]

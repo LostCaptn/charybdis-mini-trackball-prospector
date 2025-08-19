@@ -98,13 +98,13 @@
 
         right_click {
             bindings = <&mkp RCLK>;
-            key-positions = <34 38>;
+            key-positions = <28 27>;
             layers = <5>;
         };
 
         left_click {
             bindings = <&mkp LCLK>;
-            key-positions = <34 36>;
+            key-positions = <26 25>;
             layers = <5>;
         };
     };

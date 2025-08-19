@@ -44,6 +44,7 @@
 
             // scaler: first is multiplier, second one is divider.
 
+
             input-processors =
                 <&zip_xy_to_scroll_mapper>,
                 <&zip_scroll_transform(INPUT_TRANSFORM_XY_SWAP)>,
@@ -62,6 +63,32 @@
             quick-tap-ms = <150>;
             require-prior-idle-ms = <185>;
             flavor = "tap-preferred";
+        };
+
+ // Left-hand HRM
+        ht_left: left_side_homerow_mod {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <280>;
+            quick-tap-ms = <175>;
+            require-prior-idle-ms = <150>;
+            bindings = <&kp>, <&kp>;
+            hold-trigger-key-positions = <KEYS_R THUMBS>;
+            hold-trigger-on-release;
+        };
+
+        // Right-hand HRM
+        ht_right: right_side_homerow_mod {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <280>;
+            quick-tap-ms = <175>;
+            require-prior-idle-ms = <125>;
+            bindings = <&kp>, <&kp>;
+            hold-trigger-key-positions = <KEYS_L THUMBS>;
+            hold-trigger-on-release;
         };
     };
 

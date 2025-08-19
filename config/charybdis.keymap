@@ -93,21 +93,7 @@
         };
     };
 
-    combos {
-        compatible = "zmk,combos";
-
-        right_click {
-            bindings = <&mkp RCLK>;
-            key-positions = <28 27>;
-            layers = <5>;
-        };
-
-        left_click {
-            bindings = <&mkp LCLK>;
-            key-positions = <26 25>;
-            layers = <5>;
-        };
-    };
+    combos { compatible = "zmk,combos"; };
 
     keymap {
         compatible = "zmk,keymap";
@@ -167,7 +153,7 @@
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &mo 7   &trans  &trans  &mo 6
+&trans  &mo 8   &trans  &trans  &trans  &trans    &trans  &trans  &mo 7   &trans  &trans  &mo 6
                         &trans  &trans  &trans    &trans  &trans
             >;
         };
@@ -189,6 +175,15 @@
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
                         &trans  &trans  &trans    &trans  &trans
+            >;
+        };
+
+        Mouse_Keys {
+            bindings = <
+&trans  &trans  &trans  &trans     &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans     &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans     &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans
+                        &mkp LCLK  &trans  &mkp RCLK    &trans  &trans
             >;
         };
     };

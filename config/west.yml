@@ -4,6 +4,16 @@ manifest:
       url-base: https://github.com/zmkfirmware
     - name: badjeff
       url-base: https://github.com/badjeff
+#    - name: carrefinho
+#      url-base: https://github.com/thewinger
+    - name: carrefinho
+      url-base: https://github.com/bukharovsi
+    - name: urob
+      url-base: https://github.com/urob
+#    - name: englmaxi
+#      url-base: https://github.com/englmaxi
+    - name: janpfischer
+      url-base: https://github.com/Bukharovsi
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -15,8 +25,17 @@ manifest:
     - name: zmk-split-peripheral-input-relay
       remote: badjeff
       revision: main
-    - name: zmk-input-behavior-listener
-      remote: badjeff
+    - name: prospector-zmk-module
+      remote: carrefinho
+      revision: main
+    - name: zmk-helpers
+      remote: urob
+      revision: main
+#    - name: zmk-dongle-display
+#      remote: englmaxi
+#      revision: main
+    - name: zmk-dongle-screen
+      remote: janpfischer
       revision: main
   self:
     path: config

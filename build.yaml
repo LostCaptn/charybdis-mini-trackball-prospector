@@ -31,18 +31,19 @@ include:
     artifact-name: charybdis_qwerty_right
     snippet: studio-rpc-usb-uart
 
-  # Colemak DH BT
-  - board: nice_nano_v2
-    shield: charybdis_left
-    keymap: colemak_dh
-    format: bt
-    artifact-name: charybdis_colemak_left
-  - board: nice_nano_v2
-    shield: charybdis_right
-    keymap: colemak_dh
-    format: bt
-    artifact-name: charybdis_colemak_right
-    snippet: studio-rpc-usb-uart
+#  # Colemak DH BT
+#  - board: nice_nano_v2
+#    shield: charybdis_left
+#    keymap: colemak_dh
+#    format: bt
+#    artifact-name: charybdis_colemak_left
+#  - board: nice_nano_v2
+#    shield: charybdis_right
+#    keymap: colemak_dh
+#    format: bt
+#    artifact-name: charybdis_colemak_right
+#    snippet: studio-rpc-usb-uart
+#
 
   # QWERTY Dongle
   - board: nice_nano_v2
@@ -60,26 +61,53 @@ include:
     keymap: qwerty
     format: dongle
     artifact-name: charybdis_qwerty_dongle
+  - board: seeeduino_xiao_ble
+    shield: charybdis_dongle_prospector prospector_adapter
+    keymap: qwerty
+    format: dongle
+    artifact-name: charybdis_qwerty_dongle_prospector
+    snippet: zmk-usb-logging
+#  - board: nice_nano_v2
+#    shield: charybdis_dongle_display dongle_display
+#    keymap: qwerty
+#    format: dongle
+#    artifact-name: charybdis_qwerty_dongle_display
+  - board: seeeduino_xiao_ble
+    keymap: qwerty
+    format: dongle
+    shield: charybdis_dongle dongle_screen
+    artifact-name: charybdis_qwerty_dongle_yads
 
-  # Colemak DH Dongle
-  - board: nice_nano_v2
-    shield: charybdis_left
-    keymap: colemak_dh
-    format: dongle
-    artifact-name: charybdis_colemak_dongle_left
-  - board: nice_nano_v2
-    shield: charybdis_right
-    keymap: colemak_dh
-    format: dongle
-    artifact-name: charybdis_colemak_dongle_right
-  - board: nice_nano_v2
-    shield: charybdis_dongle
-    keymap: colemak_dh
-    format: dongle
-    artifact-name: charybdis_colemak_dongle
+#  # Colemak DH Dongle
+#  - board: nice_nano_v2
+#    shield: charybdis_left
+#    keymap: colemak_dh
+#    format: dongle
+#    artifact-name: charybdis_colemak_dongle_left
+#  - board: nice_nano_v2
+#    shield: charybdis_right
+#    keymap: colemak_dh
+#    format: dongle
+#    artifact-name: charybdis_colemak_dongle_right
+#  - board: nice_nano_v2
+#    shield: charybdis_dongle
+#    keymap: colemak_dh
+#    format: dongle
+#    artifact-name: charybdis_colemak_dongle
+#  - board: seeeduino_xiao_ble
+#    shield: charybdis_dongle prospector_adapter
+#    keymap: colemak_dh
+#    format: dongle
+#    artifact-name: charybdis_colemak_dongle_prospector
 
   # Firmware Reset
   - board: nice_nano_v2
     shield: settings_reset
     format: reset
     artifact-name: firmware_reset_nano_v2
+
+  # Firmware Reset
+  - board: seeeduino_xiao_ble
+    shield: settings_reset
+    format: reset
+    artifact-name: firmware_reset_xiao_ble

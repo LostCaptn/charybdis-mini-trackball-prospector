@@ -30,4 +30,9 @@ matrix:
     keymap: default
     shields:
       - settings_reset
-
+      
+  # Firmware Reset
+  - board: seeeduino_xiao_ble
+    shield: settings_reset
+    format: reset
+    artifact-name: firmware_reset_xiao_ble

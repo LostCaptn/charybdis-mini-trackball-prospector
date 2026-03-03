@@ -68,7 +68,7 @@ include:
     artifact-name: charybdis_qwerty_dongle_prospector
     snippet: zmk-usb-logging
   - board: nice_nano_v2
-    shield: charybdis_dongle_display dongle_display
+    shield: charybdis_dongle_prospector
     keymap: qwerty
     format: dongle
     artifact-name: charybdis_qwerty_dongle_display

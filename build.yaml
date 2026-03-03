@@ -62,7 +62,7 @@ include:
     #format: dongle
     #artifact-name: charybdis_qwerty_dongle
   - board: seeeduino_xiao_ble
-    shield: charybdis_dongle_prospector
+    shield: charybdis_dongle_prospector prospector_adapter
     keymap: qwerty
     format: dongle
     artifact-name: charybdis_qwerty_dongle_prospector

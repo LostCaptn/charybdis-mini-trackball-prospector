@@ -36,7 +36,7 @@ jobs:
     #     mv config/keymap/charybdis.keymap config/keymap/qwerty.keymap
 
     - uses: actions/upload-artifact@v4
-      with: { name: generated-keymaps, path: config/* .keymap }
+      with: { name: generated-keymaps, path: config/*.keymap }
 
     - name: Build-matrix JSON
       run: python scripts/generate_matrix.py > build.json
@@ -92,7 +92,7 @@ jobs:
     # ───────── pull in keymaps ─────────
     - name: Download keymaps
       uses: actions/download-artifact@v4
-      with: { name: generated-keymaps, path: config/* .keymap }
+      with: { name: generated-keymaps, path: config/*.keymap }
 
     # ───────── stage keymaps and helper files ─────────
     - name: Stage locales, keymaps, overlays, and dtsi files into source tree

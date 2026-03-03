@@ -19,17 +19,17 @@
 ---
 include:
   # QWERTY BT
-  - board: nice_nano_v2
-    shield: charybdis_left
-    keymap: qwerty
-    format: bt
-    artifact-name: charybdis_qwerty_left
-  - board: nice_nano_v2
-    shield: charybdis_right
-    keymap: qwerty
-    format: bt
-    artifact-name: charybdis_qwerty_right
-    snippet: studio-rpc-usb-uart
+ # - board: nice_nano_v2
+   # shield: charybdis_left
+   # keymap: qwerty
+   # format: bt
+   # artifact-name: charybdis_qwerty_left
+ # - board: nice_nano_v2
+  # shield: charybdis_right
+   # keymap: qwerty
+   # format: bt
+   # artifact-name: charybdis_qwerty_right
+  # snippet: studio-rpc-usb-uart
 
 #  # Colemak DH BT
 #  - board: nice_nano_v2
@@ -67,16 +67,16 @@ include:
     format: dongle
     artifact-name: charybdis_qwerty_dongle_prospector
     snippet: zmk-usb-logging
-#  - board: nice_nano_v2
-#    shield: charybdis_dongle_display dongle_display
-#    keymap: qwerty
-#    format: dongle
-#    artifact-name: charybdis_qwerty_dongle_display
-  #- board: seeeduino_xiao_ble
-   # keymap: qwerty
-   # format: dongle
-   # shield: charybdis_dongle dongle_screen
-    #artifact-name: charybdis_qwerty_dongle_yads
+  - board: nice_nano_v2
+    shield: charybdis_dongle_display dongle_display
+    keymap: qwerty
+    format: dongle
+    artifact-name: charybdis_qwerty_dongle_display
+  - board: seeeduino_xiao_ble
+    keymap: qwerty
+    format: dongle
+    shield: charybdis_dongle dongle_screen
+    artifact-name: charybdis_qwerty_dongle_yads
 
 #  # Colemak DH Dongle
 #  - board: nice_nano_v2

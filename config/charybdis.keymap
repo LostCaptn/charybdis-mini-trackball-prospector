@@ -101,20 +101,29 @@
         BASE {
             label = "Base";
             bindings = <
-&lt SYS ESC   &kp Q             &kp W  &kp E             &kp R      &kp T        &kp Y  &kp U  &kp I      &kp O       &kp P                      &kp BACKSPACE
+&lt 5 ESC     &kp Q             &kp W  &kp E             &kp R      &kp T        &kp Y  &kp U  &kp I      &kp O       &kp P                      &kp BACKSPACE
 &kp TAB       &hm LEFT_SHIFT A  &kp S  &kp D             &kp F      &kp G        &kp H  &kp J  &kp K      &kp L       &hm RIGHT_SHIFT SEMICOLON  &kp SINGLE_QUOTE
 &kp LEFT_GUI  &kp Z             &kp X  &kp C             &kp V      &kp B        &kp N  &kp M  &kp COMMA  &kp PERIOD  &kp SLASH                  &kp RIGHT_CONTROL
-                                       &kp LEFT_CONTROL  &kp SPACE  &kp ENTER    &mo 2  &mo 3
+                                       &kp LEFT_CONTROL  &kp SPACE  &kp ENTER    &mo 3  &mo 4
             >;
         };
 
-        GAME {
-            label = "Game";
+        OSRS {
+            label = "OSRS";
             bindings = <
-&lt BASE ESC  &kp Q  &kp W  &kp E             &kp R      &kp T      &kp Y        &kp U    &kp I      &kp O    &kp P          &to BASE
-&kp TAB       &kp A  &kp S  &kp D             &kp F      &kp G      &kp H        &kp J    &kp K      &kp L    &kp SEMICOLON  &trans
-&kp LSHFT     &kp Z  &kp X  &kp C             &kp V      &kp B      &kp N        &kp M    &kp COMMA  &kp DOT  &kp SLASH      &trans
-                            &sk LEFT_COMMAND  &kp SPACE  &mo DIG    &lt SYS ESC  &kp RET
+&lt 0 ESC  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3    &kp NUMBER_4  &kp NUMBER_5    &kp Y      &kp U    &kp I      &kp O    &kp P          &to 0
+&kp TAB    &kp F1        &kp F2        &kp F3          &kp F4        &kp F5          &kp H      &kp J    &kp K      &kp L    &kp SEMICOLON  &trans
+&to 2      &kp Z         &kp X         &kp C           &kp V         &kp B           &kp N      &kp M    &kp COMMA  &kp DOT  &kp SLASH      &trans
+                                       &kp LEFT_SHIFT  &kp SPACE     &kp LCTRL       &lt 5 ESC  &kp RET
+            >;
+        };
+
+        Game {
+            bindings = <
+&trans  &kp NUMBER_1  &kp NUMBER_2  &kp W           &kp NUMBER_3  &kp NUMBER_4        &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans        &kp A         &kp S           &kp D         &trans              &trans  &trans  &trans  &trans  &trans  &trans
+&to 1   &trans        &trans        &trans          &trans        &trans              &trans  &trans  &trans  &trans  &trans  &trans
+                                    &kp LEFT_SHIFT  &kp SPACE     &kp LEFT_CONTROL    &trans  &trans
             >;
         };
 
@@ -131,7 +140,7 @@
         digits {
             label = "Digits";
             bindings = <
-&mo 4   &kp NUMBER_1      &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5    &kp NUMBER_6    &kp N7    &kp N8        &kp N9     &kp N0           &trans
+&mo 5   &kp NUMBER_1      &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5    &kp NUMBER_6    &kp N7    &kp N8        &kp N9     &kp N0           &trans
 &trans  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp DEL       &trans        &trans    &kp LEFT_ARROW  &kp DOWN  &kp UP_ARROW  &kp RIGHT  &kp KP_MULTIPLY  &kp MINUS
 &trans  &kp F1            &kp F2        &kp F3        &kp F4        &kp F5    &kp F6          &kp F7    &trans        &trans     &trans           &kp SLASH
                                         &trans        &trans        &trans    &trans          &kp N0
@@ -153,7 +162,7 @@
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &mo 8   &trans  &trans  &trans  &trans    &trans  &trans  &mo 7   &trans  &trans  &mo 6
+&trans  &mo 9   &trans  &trans  &trans  &trans    &trans  &trans  &mo 8   &trans  &trans  &mo 7
                         &trans  &trans  &trans    &trans  &trans
             >;
         };

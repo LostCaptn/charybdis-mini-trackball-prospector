@@ -42,13 +42,13 @@ layers:
   - ENTER
   - Symbols
   - Digits
-  Game:
+  OSRS:
   - {t: ESC, h: Base}
-  - Q
-  - W
-  - E
-  - R
-  - T
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
   - Y
   - U
   - I
@@ -56,18 +56,18 @@ layers:
   - P
   - {t: Base, h: toggle}
   - TAB
-  - A
-  - S
-  - D
-  - F
-  - G
+  - F1
+  - F2
+  - F3
+  - F4
+  - F5
   - H
   - J
   - K
   - L
   - ;
   - {t: ▽, type: trans}
-  - LSHFT
+  - {t: Game, h: toggle}
   - Z
   - X
   - C
@@ -79,11 +79,53 @@ layers:
   - .
   - /
   - {t: ▽, type: trans}
-  - {t: LEFT COMMAND, h: sticky}
+  - LEFT SHIFT
   - SPACE
-  - Digits
+  - LCTRL
   - {t: ESC, h: SYSTEM}
   - RET
+  Game:
+  - {t: ▽, type: trans}
+  - '1'
+  - '2'
+  - W
+  - '3'
+  - '4'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - A
+  - S
+  - D
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: OSRS, h: toggle}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - LEFT SHIFT
+  - SPACE
+  - LEFT CONTROL
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   Symbols:
   - {t: ▽, type: trans}
   - '!'
@@ -185,7 +227,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - OUT USB
-  - {t: Game, h: toggle}
+  - {t: OSRS, h: toggle}
   - OUT BLE
   - MUTE
   - PP

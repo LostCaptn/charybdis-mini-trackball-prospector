@@ -67,11 +67,11 @@ include:
     format: dongle
     artifact-name: charybdis_qwerty_dongle_prospector
     snippet: zmk-usb-logging
-  - board: nice_nano_v2
-    shield: charybdis_dongle_prospector
-    keymap: qwerty
-    format: dongle
-    artifact-name: charybdis_qwerty_dongle_display
+  # - board: nice_nano_v2
+    #shield: charybdis_dongle_prospector
+    #keymap: qwerty
+    #format: dongle
+    #artifact-name: charybdis_qwerty_dongle_display
   - board: seeeduino_xiao_ble
     keymap: qwerty
     format: dongle

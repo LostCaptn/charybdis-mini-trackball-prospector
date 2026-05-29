@@ -75,7 +75,7 @@
             bindings = <
 &lt 5 ESCAPE  &kp Q             &kp W  &kp E      &kp R      &kp T        &kp Y  &kp U  &kp I      &kp O       &kp P                      &kp BACKSPACE
 &kp TAB       &hm LEFT_SHIFT A  &kp S  &kp D      &kp F      &kp G        &kp H  &kp J  &kp K      &kp L       &hm RIGHT_SHIFT SEMICOLON  &kp SQT
-&kp LEFT_GUI  &kp Z             &kp X  &kp C      &kp V      &kp B        &kp N  &kp M  &kp COMMA  &kp PERIOD  &kp SLASH                  &kp RCTRL
+&kp LEFT_GUI  &kp Z             &kp X  &kp C      &kp V      &kp B        &kp N  &kp M  &kp COMMA  &kp PERIOD  &kp SLASH                  &mo 8
                                        &kp LCTRL  &kp SPACE  &kp ENTER    &mo 3  &mo 1
             >;
         };
@@ -152,10 +152,10 @@
 
         MouseKeys {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans
+&trans  &trans  &trans  &trans     &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans     &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans     &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans
+                        &mkp LCLK  &trans  &mkp RCLK    &trans  &trans
             >;
         };
     };

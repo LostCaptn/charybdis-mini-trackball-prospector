@@ -26,6 +26,8 @@ fi
 if [[ "$SKIP_WEST_UPDATE" == "true" ]]; then
     echo "Skipping west update; using current local module checkouts."
 else
+    # Ignore file mode changes before updating (chmod -R 777 later would dirty every file otherwise)
+    west forall -c 'git config core.fileMode false' 2>/dev/null || true
     echo "Updating west modules..."
     west update
 fi
@@ -63,7 +65,7 @@ fi
 
 # Set permissions so users can delete them in their own environment
 echo "Setting permissions on ZMK resources..."
-chmod -R 777 .west zmk zephyr modules zmk-pmw3610-driver prospector-zmk-module
+chmod -R a+rwX .west zmk zephyr modules zmk-pmw3610-driver prospector-zmk-module
 
 # # Debug: confirm checkout
 # echo "    West workspace ready. Project structure:"
